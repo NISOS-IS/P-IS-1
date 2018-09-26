@@ -36,7 +36,7 @@
 >>**`git rm archivo`**
 
 >	* Luego se valida el cambio realizado con:
->>**`git commit -m "Mensaje"**
+>>**`git commit -m "Mensaje"`**
 
 * Mover o renombrar archivos:
 >	* Primero se mueve o renombra el archivo con:
