@@ -45,4 +45,12 @@
 >	* Luego se valida el cambio realizado con:
 >>**`git commit -m "Mensaje`**
 
+###Comandos básicos IV
+
+* Deshacer los cambios con git:  
+>>**`git checkout -- <nombre_fichero>`**
+
+* Retirar archivos del *staging*:  
+>>**`git reset HEAD <nombre_fichero>`**
+
 
