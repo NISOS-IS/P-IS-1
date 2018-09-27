@@ -40,7 +40,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Historial de commits:
 >>**`git log`**
 
-###Comandos Básicos II
+### Comandos Básicos II
 
 * Ayuda del listado anterior:
 >>**`git help log`**
@@ -59,7 +59,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Ver cambios en el directorio:  
 >>**`git status`**
 
-###Comandos básicos III
+### Comandos básicos III
 
 * Ver diferencia entre los ficheros del directorio y los del repositorio de git:  
 >>**`git diff`**
@@ -81,7 +81,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 >	* Luego se valida el cambio realizado con:
 >>**`git commit -m "Mensaje`**
 
-###Comandos básicos IV
+### Comandos básicos IV
 
 * Deshacer los cambios con git:  
 >>**`git checkout -- <nombre_fichero>`**
@@ -89,3 +89,39 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Retirar archivos del *staging*:  
 >>**`git reset HEAD <nombre_fichero>`**
 
+* Complementar Último commit:>>**`git commit --amed -m "Mensaje"`*** Recuperar versión de un fichero de commit antiguo:>>**`git checkout <id_commit> -- <nombre_archivo>`*** Revertir un commit:>>**`git revert <id_commit>`**### Comandos Básicos V* Deshacer múltiples cambios en el repositorio:>>**`git reset --soft <id_commit>`**>>**`git reset --mixed <id_commit>`**>>**`git reset --hard <id_commit>`*** Listar archivos que git no controla:>>**`git clean -n`*** Eliminar archivos que git no controla:>>**`git clean -g`*** Ignorar archivos en el repositorio: .gitignore### Comandos Básicos VI>>**`git ls-tree master`**   >>**`git ls-tree master^^^`**   >>**`git ls-tree master ̃ 3`*** Log en una línea:>>**`git log --oneline`*** Log con los tres últimos commits en una línea:>>**`git log -oneline -3`*** Para más opciones consultar documentación de git### Comandos Básicos VII* Examinar contenido de un commit: >>**`git show <id>`*** Comparar un commit con el actual:>>**`git diff <id> <nombre_archivo>`*** Comparar dos commits:>>**`git diff <id>..<id> <nombre_archivo>`**### Comandos Ramas I
+
+Las ramas o *branches* son la forma de separar la línea actual de desarrollo de nuestro proyecto con respecto a la principal. Estas distintas ramas representan normalmente distintas versiones del proyecto que posteriormente son integradas a la línea principal.
+
+* Ver listado de ramas:
+>>**`git branch`**
+
+* Crear una rama:
+>>**`git branch <nombre_rama>`**
+
+* Moverse de una rama a otra:
+>>**`git checkout <nombre_rama>`**
+
+* Crear una rama y moverse a ella al mismo tiempo:
+>>**`git checkout -b <nombre_rama>
+
+* Comparar el contenido entre distintas ramas:
+>>**`git diff <nombre_rama1>..<nombre_rama2>
+
+### Comandos Ramas II
+
+* Ver ramas idénticas a la actual:
+>>**`git branch --merged`**
+
+* Renombrar ramas:
+>>**`git branch -m <nombre_antiguo> <nombre_nuevo>`**
+
+* Eliminar ramas:
+>	* Sirve para eliminar una rama, pero te pregunta si el contenido que hay en ella quieres guardarlo en otra rama o borrarla sin guardar nada.
+>>**`git branch -d <nombre_rama>`**
+
+>	* Sirve para eliminar una rama. En este caso no se te pregunta si el contenido lo quieres guardar o no, simplemente se elimina todo, perdiendo el contenido de dicha rama.
+>>**`git branch -D <nombre_rama>`**
+
+* Integrar ramas en la actual (guardar ramas en la actual):
+>>**`git merge <nombre_rama>`**
