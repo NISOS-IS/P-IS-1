@@ -1,5 +1,5 @@
 # Tutorial de Git y GitHub
-###Configuración Básica
+### Configuración Básica
 
 * Nombre del Administrador:
 >>**`git config --global user.name "nombre_usuario"`**
@@ -16,7 +16,7 @@
 * Listado de la Configuración:
 >>**`git config --list`**
 
-###Comandos Básicos I
+### Comandos Básicos I
 
 Git cuente con 3 estados fundamentales:
 
