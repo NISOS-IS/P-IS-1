@@ -40,7 +40,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Historial de commits:
 >>**`git log`**
 
-###Comandos Básicos II
+### Comandos Básicos II
 
 * Ayuda del listado anterior:
 >>**`git help log`**
@@ -59,7 +59,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Ver cambios en el directorio:  
 >>**`git status`**
 
-###Comandos básicos III
+### Comandos básicos III
 
 * Ver diferencia entre los ficheros del directorio y los del repositorio de git:  
 >>**`git diff`**
@@ -81,7 +81,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 >	* Luego se valida el cambio realizado con:
 >>**`git commit -m "Mensaje`**
 
-###Comandos básicos IV
+### Comandos básicos IV
 
 * Deshacer los cambios con git:  
 >>**`git checkout -- <nombre_fichero>`**
