@@ -20,3 +20,11 @@
 
 >	* Luego se hace:
 >>**`git stash pop <nombre_stash>`**  
+
+### Comandos GitHub I
+
+* Añadir repositorio remoto:  
+>>**`git remote add <nombre_repositorio> <url>`**
+
+* Ver repositorios remotos:  
+>>**`git remote -v`**
