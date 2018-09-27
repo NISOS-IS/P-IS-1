@@ -89,7 +89,55 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 * Retirar archivos del *staging*:  
 >>**`git reset HEAD <nombre_fichero>`**
 
-* Complementar Último commit:>>**`git commit --amed -m "Mensaje"`*** Recuperar versión de un fichero de commit antiguo:>>**`git checkout <id_commit> -- <nombre_archivo>`*** Revertir un commit:>>**`git revert <id_commit>`**### Comandos Básicos V* Deshacer múltiples cambios en el repositorio:>>**`git reset --soft <id_commit>`**>>**`git reset --mixed <id_commit>`**>>**`git reset --hard <id_commit>`*** Listar archivos que git no controla:>>**`git clean -n`*** Eliminar archivos que git no controla:>>**`git clean -g`*** Ignorar archivos en el repositorio: .gitignore### Comandos Básicos VI>>**`git ls-tree master`**   >>**`git ls-tree master^^^`**   >>**`git ls-tree master ̃ 3`*** Log en una línea:>>**`git log --oneline`*** Log con los tres últimos commits en una línea:>>**`git log -oneline -3`*** Para más opciones consultar documentación de git### Comandos Básicos VII* Examinar contenido de un commit: >>**`git show <id>`*** Comparar un commit con el actual:>>**`git diff <id> <nombre_archivo>`*** Comparar dos commits:>>**`git diff <id>..<id> <nombre_archivo>`**### Comandos Ramas I
+
+* Complementar Último commit:
+>>**`git commit --amed -m "Mensaje"`**
+
+* Recuperar versión de un fichero de commit antiguo:
+>>**`git checkout <id_commit> -- <nombre_archivo>`**
+
+* Revertir un commit:
+>>**`git revert <id_commit>`**
+
+### Comandos Básicos V
+
+* Deshacer múltiples cambios en el repositorio:
+>>**`git reset --soft <id_commit>`**
+>>**`git reset --mixed <id_commit>`**
+>>**`git reset --hard <id_commit>`**
+
+* Listar archivos que git no controla:
+>>**`git clean -n`**
+
+* Eliminar archivos que git no controla:
+>>**`git clean -g`**
+
+* Ignorar archivos en el repositorio: .gitignore
+
+### Comandos Básicos VI
+>>**`git ls-tree master`**   
+>>**`git ls-tree master^^^`**   
+>>**`git ls-tree master ̃ 3`**
+
+* Log en una línea:
+>>**`git log --oneline`**
+
+* Log con los tres últimos commits en una línea:
+>>**`git log -oneline -3`**
+
+* Para más opciones consultar documentación de git
+
+### Comandos Básicos VII
+
+* Examinar contenido de un commit: 
+>>**`git show <id>`**
+
+* Comparar un commit con el actual:
+>>**`git diff <id> <nombre_archivo>`**
+
+* Comparar dos commits:
+>>**`git diff <id>..<id> <nombre_archivo>`**
+### Comandos Ramas I
 
 Las ramas o *branches* son la forma de separar la línea actual de desarrollo de nuestro proyecto con respecto a la principal. Estas distintas ramas representan normalmente distintas versiones del proyecto que posteriormente son integradas a la línea principal.
 
@@ -125,3 +173,34 @@ Las ramas o *branches* son la forma de separar la línea actual de desarrollo de
 
 * Integrar ramas en la actual (guardar ramas en la actual):
 >>**`git merge <nombre_rama>`**
+
+* Resolver conflictos (se suele hacer manualmente):
+>>**`git merge --abort`**
+
+### Comandos Ramas III
+* Almacenar cambios temporales:
+>>**`git stash sabe "Mensaje"`**
+
+* Listar cambios:
+>>**`git stash list`**
+
+* Ver contenido de un cambio temporal:  
+>>**`git stash show -p <nombre_stash>`**
+
+* Eliminar un cambio temporal:  
+>>**`git stash drop <nombre_stash>`**
+
+* Aplicar cambio del *stash*:
+>	* Primero se hace:
+>>**`git stash apply <nombre_stash>`**
+
+>	* Luego se hace:
+>>**`git stash pop <nombre_stash>`**  
+
+### Comandos GitHub I
+
+* Añadir repositorio remoto:  
+>>**`git remote add <nombre_repositorio> <url>`**
+
+* Ver repositorios remotos:  
+>>**`git remote -v`**

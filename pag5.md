@@ -1,3 +1,4 @@
+
 * Resolver conflictos (se suele hacer manualmente):
 >>**`git merge --abort`**
 
