@@ -137,6 +137,7 @@ Cuando trabajamos con Git, tenemos que seguir unos pasos básicos con nuestros p
 
 * Comparar dos commits:
 >>**`git diff <id>..<id> <nombre_archivo>`**
+
 ### Comandos Ramas I
 
 Las ramas o *branches* son la forma de separar la línea actual de desarrollo de nuestro proyecto con respecto a la principal. Estas distintas ramas representan normalmente distintas versiones del proyecto que posteriormente son integradas a la línea principal.
@@ -151,10 +152,10 @@ Las ramas o *branches* son la forma de separar la línea actual de desarrollo de
 >>**`git checkout <nombre_rama>`**
 
 * Crear una rama y moverse a ella al mismo tiempo:
->>**`git checkout -b <nombre_rama>
+>>**`git checkout -b <nombre_rama>`**
 
 * Comparar el contenido entre distintas ramas:
->>**`git diff <nombre_rama1>..<nombre_rama2>
+>>**`git diff <nombre_rama1>..<nombre_rama2>`**
 
 ### Comandos Ramas II
 
@@ -204,4 +205,48 @@ Las ramas o *branches* son la forma de separar la línea actual de desarrollo de
 
 * Ver repositorios remotos:  
 >>**`git remote -v`**
-* Eliminar repositorio remoto:   >>**`git remote rm <nombre_repositorio>`*** Añadir cambios del repositorio local al remoto:   >>**`git push -u <nombre_repositorio> master`*** Añadir cambios del repositorio remoto al local:   >>**`git pull`**### Comandos GitHub II* Ver *branches* remotos:  >>**`git branch -r`*** Ver todos los *branches*:   >>**`git branch -a`*** Clonar repositorio remoto:   >>**`git clone <url>`****Dar seguimiento a *branches* remotos**+ LOCAL → REMOTO        1.  Cambios en el repositorio local.       2.  Commit de los cambios.       3.  Añadir cambios a repositorio remoto:   >>**`git push`**+ REMOTO → LOCAL    + Sincronización y unión:   >>**`git fech <nombre_repositorio>`**   >>**`git merge <nombre_repositorio>/master`**  + En un solo paso:   >>**`git pull`****Operaciones con *branches* remotos**+ Creación:    1. Crear Branch local.    2. Hacer cambios en dicho Branch.    3. Hacer commit.    4. Copiar el branch al repositorio remoto:   >>**`git push -u <nombre_repositorio> branch_remote`**
+* Eliminar repositorio remoto:   
+>>**`git remote rm <nombre_repositorio>`**
+
+* Añadir cambios del repositorio local al remoto:   
+>>**`git push -u <nombre_repositorio> master`**
+
+* Añadir cambios del repositorio remoto al local:   
+>>**`git pull`**
+
+### Comandos GitHub II
+
+* Ver *branches* remotos:  
+>>**`git branch -r`**
+
+* Ver todos los *branches*:   
+>>**`git branch -a`**
+
+* Clonar repositorio remoto:   
+>>**`git clone <url>`**
+
+**Dar seguimiento a *branches* remotos**
+
++ LOCAL → REMOTO    
+
+    1.  Cambios en el repositorio local.   
+    2.  Commit de los cambios.   
+    3.  Añadir cambios a repositorio remoto:   
+>>>>**`git push`**
+
++ REMOTO → LOCAL
+    + Sincronización y unión:   
+>>>>**`git fech <nombre_repositorio>`**   
+>>>>**`git merge <nombre_repositorio>/master`**
+
+  + En un solo paso:   
+>>**`git pull`**
+
+**Operaciones con *branches* remotos**
+
++ Creación:
+    1. Crear Branch local.
+    2. Hacer cambios en dicho Branch.
+    3. Hacer commit.
+    4. Copiar el branch al repositorio remoto:   
+>>>>**`git push -u <nombre_repositorio> branch_remote`**
